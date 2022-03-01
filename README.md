@@ -1,8 +1,8 @@
 # Most Active Cookie
 Write a command line program along with appropriate tests (very important step) in your preferred language to process the log file and return the most active cookie for a specified day.  
 
-Given a cookie log file in the following format:
-cookie,timestamp<br/>
+Given a cookie log file in the following format: <br/>
+cookie,timestamp <br/>
 AtY0laUfhglK3lC7,2018-12-09T14:19:00+00:00 <br/>
 SAZuXPGUrfbcn5UA,2018-12-09T10:13:00+00:00 <br/>
 5UAVanZf6UtGyKVS,2018-12-09T07:25:00+00:00 <br/>

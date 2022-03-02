@@ -19,7 +19,7 @@ Command:
 $ ./most_active_cookie cookie_log.csv -d 2018-12-09
 
 Output:
-AtY0laUfhglK3lC7
+AtY0laUfhglK3lC7<br/>
 We define the most active cookie as one seen in the log the most times during a given day.
 
 Assumptions:

@@ -17,7 +17,7 @@ Python 3 must be installed in order to run these files.<br/>
 * To run this program, enter `python3 mostactivecookie_tests.py`
 
 ## Assignment Description
-Write a command line program along with appropriate tests (very important step) in your preferred language to process the log file and return the most active cookie for a specified day.<br/><br/>
+Write a command line program along with appropriate tests (very important step) in your preferred language to process the log file and return the most active cookie for a specified day.<br/>
 
 **Cookie log file (cookie_log.csv) format:** <br/>
 cookie,timestamp <br/>

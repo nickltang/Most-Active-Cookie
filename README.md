@@ -1,11 +1,15 @@
 # Most Active Cookie
+## Description
 This repository contains a CLI program, mostactivecookie.py, that finds and returns the most active cookie(s) in a cookie log csv file, cookie_log.csv, for a given date.  
 It also contains a testing file, mostactivecookie_tests.py, that uses Python's unittest library to test for a specific date, 2018-12-08.
 To test the accuracy of our CLI program in filtering out less active cookies, some cookies for 2018-12-08 are repeated in the given cookie log, cookie_log.csv.
 
-Instructions
+## Instructions To Run
 CLI Program:
 python most_active_cookie.py cookie_log.csv -d 2018-12-08
+
+## Assignment Description
+Write a command line program along with appropriate tests (very important step) in your preferred language to process the log file and return the most active cookie for a specified day.<br/><br/>
 
 The cookie log file (cookie_log.csv) comes in the following format: <br/>
 cookie,timestamp <br/>
@@ -24,10 +28,10 @@ $ ./most_active_cookie cookie_log.csv -d 2018-12-09
 Output:
 AtY0laUfhglK3lC7<br/>
 
-We define the most active cookie as one seen in the log the most times during a given day.
+We define the most active cookie as one seen in the log the most times during a given day.  
 
 Assumptions:
-* If multiple cookies meet that criteria, please return all of them on separate lines.  
+* If multiple cookies meet that criteria, please return all of them on separate lines.<br/>
 $ ./most_active_cookie cookie_log.csv -d 2018-12-08<br/>
 SAZuXPGUrfbcn5UA<br/>
 4sMM2LxV07bPJzwf<br/>

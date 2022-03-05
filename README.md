@@ -8,16 +8,17 @@ To test the accuracy of our CLI program in filtering out less active cookies, so
 ## Instructions To Run
 Python 3 must be installed in order to run these files.<br/>
 
-CLI Program:<br/>
+**CLI Program:**
 * To run this program, enter `python3 mostactivecookie.py cookie_log.csv -d YYYY-MM-DD` for a given year, month, and date (must be in YYYY-MM-DD format).
 * Example: `python3 mostactivecookie.py cookie_log.csv -d 2018-12-08`<br/>
-Test Program:
+
+**Test Program:**
 * To run this program, enter `python3 mostactivecookie_tests.py`
 
 ## Assignment Description
 Write a command line program along with appropriate tests (very important step) in your preferred language to process the log file and return the most active cookie for a specified day.<br/>
 
-The cookie log file (cookie_log.csv) comes in the following format: <br/>
+**Cookie log file (cookie_log.csv) format:** <br/>
 cookie,timestamp <br/>
 AtY0laUfhglK3lC7,2018-12-09T14:19:00+00:00 <br/>
 SAZuXPGUrfbcn5UA,2018-12-09T10:13:00+00:00 <br/>
@@ -28,15 +29,15 @@ SAZuXPGUrfbcn5UA,2018-12-08T22:03:00+00:00 <br/>
 fbcn5UAVanZf6UtG,2018-12-08T09:30:00+00:00 <br/>
 4sMM2LxV07bPJzwf,2018-12-07T23:30:00+00:00 <br/>
 
-Test Command:
+**Test Command:**
 $ ./most_active_cookie cookie_log.csv -d 2018-12-09
 
-Output:
+**Output:**
 AtY0laUfhglK3lC7<br/>
 
 We define the most active cookie as one seen in the log the most times during a given day.  
 
-Assumptions:
+**Assumptions:**
 * If multiple cookies meet that criteria, please return all of them on separate lines.<br/>
 $ ./most_active_cookie cookie_log.csv -d 2018-12-08<br/>
   SAZuXPGUrfbcn5UA<br/>

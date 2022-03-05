@@ -2,16 +2,17 @@ import argparse
 import csv
 
 class CookieFilter:
-    def __init__(self, args):
-        self.infile = args['infile']
-        self.date = args['d']
-
     cookie_count = {}
     cookies_bydate = {}
     mostactive_cookies = []
 
+    def __init__(self, args):
+        self.infile = args['infile']
+        self.date = args['d']
 
-    # Parse cookies from CSV into dictionary if date matches
+
+    # This function parses cookies from CSV into a dictionary, cookies_bydate, if date matches.
+    # It also updates the count of each cookie for the target in a dictionary, cookie_count.
     def parse_csv_bydate(self):
         with open(self.infile) as csv_file:
             csv_reader = csv.reader(csv_file)
@@ -30,12 +31,16 @@ class CookieFilter:
                     else:
                         self.cookie_count.update({rows[0] : 1})
 
-    # Separate dates from times in CSV timestamps
+
+    # This function splits date value from time value for cookie timestamps
+    # Returns the date value.
     def format_timestamp(self, timestamp):
         iso_date = (str(timestamp)).split('T')[0]
         return iso_date
 
-    # Search for most active cookie(s) in time frame
+
+    # This function finds the max number of occurrences of cookie activity on the target date.
+    # It then adds cookies with matching count to a dictionary, mostactive_cookies.
     def find_maxcookie(self):
         max_count = max(self.cookie_count.values())
 
